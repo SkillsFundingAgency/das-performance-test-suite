@@ -1,4 +1,4 @@
-# das-performance-suite
+# das-performance-test-suite
 
 This is a Visual Studio Load Test performance test suit created using Visual Studio Framework with Load Test extension of VS. 
 
