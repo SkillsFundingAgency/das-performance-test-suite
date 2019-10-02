@@ -133,18 +133,18 @@
             </ExtractionRule>
           </CorrelationExtractionRules>
           <QueryStringParameters>
-            <QueryStringParameter Name="returnUrl" Value="https%3a%2f%2faccounts.pp-eas.apprenticeships.education.gov.uk%2fservice%2fregister%2fnew" RecordedValue="" />
+            <QueryStringParameter Name="returnUrl" Value="https%3a%2f%2faccounts.pp-eas.apprenticeships.education.gov.uk%2fservice%2fregister%2fnew" RecordedValue="https%3a%2f%2faccounts.pp-eas.apprenticeships.education.gov.uk%2fservice%2fregister%2fnew" CorrelationBinding="{{QueryStringParam4.returnUrl}}" UrlEncode="False" UseToGroupResults="False" />
           </QueryStringParameters>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
-            <FormPostParameter Name="ClientId" Value="{{$HIDDEN1.ClientId}}" RecordedValue="" />
-            <FormPostParameter Name="ReturnUrl" Value="{{$HIDDEN1.ReturnUrl}}" RecordedValue="" />
-            <FormPostParameter Name="FirstName" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Firstname}}" RecordedValue="" />
-            <FormPostParameter Name="LastName" Value="{{LastName}}" RecordedValue="" />
-            <FormPostParameter Name="Email" Value="{{Email}}" RecordedValue="" />
-            <FormPostParameter Name="Password" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Password}}" RecordedValue="" />
-            <FormPostParameter Name="ConfirmPassword" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Password}}" RecordedValue="" />
-            <FormPostParameter Name="HasAcceptedTermsAndConditions" Value="{{$HIDDEN1.HasAcceptedTermsAndConditions}}" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="Ekk8XDBKtPqRl8ITS-3skEblnVQmAVny628E8fYNgH--0pXg9t6wpzXfPBWSISdUUo5YsBBypATCZOXbyPGvvz0NDqm-yha7VWyWqp9WQXE1" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="ClientId" Value="{{$HIDDEN1.ClientId}}" RecordedValue="easaccpp" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="ReturnUrl" Value="{{$HIDDEN1.ReturnUrl}}" RecordedValue="https://accounts.pp-eas.apprenticeships.education.gov.uk/service/register/new" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="FirstName" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Firstname}}" RecordedValue="Nft" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="LastName" Value="{{LastName}}" RecordedValue="Testuseraaaaaaaafa" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="Email" Value="{{Email}}" RecordedValue="nft.testuseraaaaaaaafa@testemail.com" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="Password" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Password}}" RecordedValue="Password1" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="ConfirmPassword" Value="{{DataSource11.DAS_QA_LOADTEST_TEST_DATA_FILE_011#csv.Employer_Password}}" RecordedValue="Password1" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="HasAcceptedTermsAndConditions" Value="{{$HIDDEN1.HasAcceptedTermsAndConditions}}" RecordedValue="true" CorrelationBinding="" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
         <Request Method="POST" Guid="f305a1b3-6cd9-4ffe-841e-62646c39b48f" Version="1.1" Url="https://pp-login.apprenticeships.education.gov.uk/" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://pp-login.apprenticeships.education.gov.uk/account/confirm" ReportingName="" IgnoreHttpStatusCode="False">
@@ -173,12 +173,12 @@
             </ExtractionRule>
           </CorrelationExtractionRules>
           <FormPostHttpBody>
-            <FormPostParameter Name="id_token" Value="{{$HIDDEN1.id_token}}" RecordedValue="" />
-            <FormPostParameter Name="access_token" Value="{{$HIDDEN1.access_token}}" RecordedValue="" />
-            <FormPostParameter Name="token_type" Value="{{$HIDDEN1.token_type}}" RecordedValue="" />
-            <FormPostParameter Name="expires_in" Value="{{$HIDDEN1.expires_in}}" RecordedValue="" />
-            <FormPostParameter Name="scope" Value="{{$HIDDEN1.scope}}" RecordedValue="" />
-            <FormPostParameter Name="state" Value="{{$HIDDEN1.state}}" RecordedValue="" />
+            <FormPostParameter Name="id_token" Value="{{$HIDDEN1.id_token}}" RecordedValue="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5CT2ZZUjM1ZUhGTTNMeDdfbkV3ZDFKdHBOayIsImtpZCI6Im5CT2ZZUjM1ZUhGTTNMeDdfbkV3ZDFKdHBOayJ9.eyJpc3MiOiJodHRwczovL3BwLWxvZ2luLmFwcHJlbnRpY2VzaGlwcy5lZHVjYXRpb24uZ292LnVrL2lkZW50aXR5IiwiYXVkIjoiaWRwIiwiZXhwIjoxNTY1ODc5MzczLCJuYmYiOjE1NjU4NzkwNzMsIm5vbmNlIjoiNjM3MDE0NzU4NzMxMjY3NjAxLlpqQTNZak01TnpJdE1HTmxZUzAwTmprNExUZzRNRE10TXpjM05EWmxZVGs1TldZeFpqazBNR000TkdRdFlXWXpNQzAwTlRaakxXSmtNVGd0Wm1ZeFlUSXlPRFptWW1VdyIsImlhdCI6MTU2NTg3OTA3MywiYXRfaGFzaCI6ImI4Um14Uk44T1c3RVhvdVdXVjRhQWciLCJzdWIiOiIwZDFlYmYzZS00NTBlLTQ5ZGEtOWYyMi03YzI1MzM2MWEyN2EiLCJhdXRoX3RpbWUiOjE1NjU4NzkwNzMsImlkcCI6Imlkc3J2IiwiaHR0cDovL2Rhcy9lbXBsb3llci9pZGVudGl0eS9jbGFpbXMvaWQiOiIwZDFlYmYzZS00NTBlLTQ5ZGEtOWYyMi03YzI1MzM2MWEyN2EiLCJodHRwOi8vZGFzL2VtcGxveWVyL2lkZW50aXR5L2NsYWltcy9lbWFpbF9hZGRyZXNzIjoibmZ0LnRlc3R1c2VyYWFhYWFhYWFmYUB0ZXN0ZW1haWwuY29tIiwiaHR0cDovL2Rhcy9lbXBsb3llci9pZGVudGl0eS9jbGFpbXMvZ2l2ZW5fbmFtZSI6Ik5mdCIsImh0dHA6Ly9kYXMvZW1wbG95ZXIvaWRlbnRpdHkvY2xhaW1zL2ZhbWlseV9uYW1lIjoiVGVzdHVzZXJhYWFhYWFhYWZhIiwiaHR0cDovL2Rhcy9lbXBsb3llci9pZGVudGl0eS9jbGFpbXMvZGlzcGxheV9uYW1lIjoiTmZ0IFRlc3R1c2VyYWFhYWFhYWFmYSIsImh0dHA6Ly9kYXMvZW1wbG95ZXIvaWRlbnRpdHkvY2xhaW1zL3JlcXVpcmVzX3ZlcmlmaWNhdGlvbiI6IlRydWUiLCJhbXIiOlsicGFzc3dvcmQiXX0.jdcUzOAO7YIpwSPHaFj1iXrvct140rKe0mM5iQQcyvU7gqQgXCA4P0Pc9fpDi9fVJVT68_QQn_BQk3-9nVK_2mDgudD8mFZ354b1jUX8Q2xUD6jmtvK_4r9kBskppM2pm-0UCXXWOF4AXNMUvoxh4ej_2nFQG8xbe17yqSNL4hKkYeTUfoVwSnlmF225sYjqBaU8fK05qfXGczVjLfOV2pLZG4vWvJtXlKJkEMhCrjYOIPyiKWGxgfC_U32FC88frhFBIg9MdsRKp1uciyMYju8nYOVNfj6CzsUxT64SosLNJ2R30Wm0mylF1AbIr1ZWwFKUZeD11WugKONPgb0xeg" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="access_token" Value="{{$HIDDEN1.access_token}}" RecordedValue="eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5CT2ZZUjM1ZUhGTTNMeDdfbkV3ZDFKdHBOayIsImtpZCI6Im5CT2ZZUjM1ZUhGTTNMeDdfbkV3ZDFKdHBOayJ9.eyJpc3MiOiJodHRwczovL3BwLWxvZ2luLmFwcHJlbnRpY2VzaGlwcy5lZHVjYXRpb24uZ292LnVrL2lkZW50aXR5IiwiYXVkIjoiaHR0cHM6Ly9wcC1sb2dpbi5hcHByZW50aWNlc2hpcHMuZWR1Y2F0aW9uLmdvdi51ay9pZGVudGl0eS9yZXNvdXJjZXMiLCJleHAiOjE1NjU4ODI2NzMsIm5iZiI6MTU2NTg3OTA3MywiY2xpZW50X2lkIjoiaWRwIiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJzdWIiOiIwZDFlYmYzZS00NTBlLTQ5ZGEtOWYyMi03YzI1MzM2MWEyN2EiLCJhdXRoX3RpbWUiOjE1NjU4NzkwNzMsImlkcCI6Imlkc3J2IiwiYW1yIjpbInBhc3N3b3JkIl19.Kfu3ombzq2hypGFVmcdyCfj54MBl7269rvDw9wwPY6a8rayTavMdxLoBzTYv3Qur0IHSONVtw40gH9IQjpXRnaRifIQUqk9FPqUQU1_tz-4Xw99LevI9kxdzUxFxyw-6wP3ujzoVp_5AHpjovBpRD4q0jDCp6zt36kFCSlbqmDSWLJi2AjbHBbZ0sUuwLNZ9SjMpd-Wxd8iDo6enbgy3PLYMs6E9tKoG6FSQOxz988rNvCSnvpGtGMIu2GE0mfbX6jvJWM6W8P_I2UKoSZqrJwXu5qCLGYxk395Tm7Wer6LvJ-M-c2DwyG5CcSBfeKO5_2ibjpF8AI8ZQOJMBAbyXw" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="token_type" Value="{{$HIDDEN1.token_type}}" RecordedValue="Bearer" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="expires_in" Value="{{$HIDDEN1.expires_in}}" RecordedValue="3600" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="scope" Value="{{$HIDDEN1.scope}}" RecordedValue="openid profile" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="state" Value="{{$HIDDEN1.state}}" RecordedValue="OpenIdConnect.AuthenticationProperties=pVpOnOg9rDMNQVGqLwy7FuEWDIPRN2hnkAbUWeJkW10LHvwcm-HANCptE0OSqRSxGXe1Ibv9tPBf_PKv1jpuCJ5YGHdvn6ZBWtdreSZ6-M1VYGq0FpF06VRPMFQRrCHgb8HmxJSAWoBW1WN4BVnLpM7ywWmwJTNTxHcwQGyR0v457c3Skw6dw2v_0wQ7UDzjf4sekooQ-zb-_luPo8gNme_gswrP9ZtLhucS6mxrPLSkfH_or174_Ebr3yPq6oi5K0yCaA9Zg2IRoRpOWSg2OCZsY9AsQrROhWZlTmaupnE" CorrelationBinding="" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -231,8 +231,8 @@
             </ExtractionRule>
           </CorrelationExtractionRules>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
-            <FormPostParameter Name="AccessCode" Value="{{DataSource10.DAS_QA_LOADTEST_TEST_DATA_FILE_010#csv.Gateway_Access_Code}}" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="9jY0icg-Fp0qjLCrcTBGDWqxsb5NVKxwdwC2a8X6ZlUKV1ZHNqyuA84nZVTAM-tn1q5mcAhV4-JdgSzFkAfe_IIg6X8UnymyyIpK0-Gf0EQvOb0QFg6AfkLQed7ZUnDGPqAW-7gtjv_Ce4PKufTvXg2" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="AccessCode" Value="{{DataSource10.DAS_QA_LOADTEST_TEST_DATA_FILE_010#csv.Gateway_Access_Code}}" RecordedValue="ABC123" CorrelationBinding="" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -253,8 +253,8 @@
             </ExtractionRule>
           </ExtractionRules>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
-            <FormPostParameter Name="choice" Value="2" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="xU9f-4zB06a_JDEeDKuP09BNA4sMZi3_qzE0eT6Lx7LIM8ufjBDM7JTzXPQ1rtAn9uTMmPLb9cvokzhmv3sFPPxweiBeABDjdgXZzA4t_ijqlKaorwm9C2qJGJCGr8MOAENc6wLN_bRYq-AbpJUY5Q2" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="choice" Value="2" RecordedValue="2" CorrelationBinding="{{FormPostParam12.choice}}" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -267,8 +267,8 @@
             <Header Name="Referer" Value="https://accounts.pp-eas.apprenticeships.education.gov.uk/accounts/schemes/waysToAdd" />
           </Headers>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
-            <FormPostParameter Name="choice" Value="1" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="9huH9avYSYsZiI9TLfAQ4vpsoUWbUOf-FP-l1XhC0Tz7cF4WqqXptifCTy6z3vg2dPbThkWYtB8FpReMtVnRgnVfX3I7otKnhcXQ3A7DMoOX3O0e4AGjwyw1CG7vbBSBtx_UI6IexeNj2V-SUvFsAg2" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="choice" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam15.choice}}" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -387,13 +387,13 @@
             <Header Name="Referer" Value="https://das-alpha-taxservice-mock.herokuapp.com/gg/sign-in?continue=/oauth/grantscope?auth_id={{auth_id}}&amp;origin=oauth-frontend" />
           </Headers>
           <QueryStringParameters>
-            <QueryStringParameter Name="continue" Value="{{continue}}" RecordedValue="" />
-            <QueryStringParameter Name="origin" Value="oauth-frontend" RecordedValue="" />
+            <QueryStringParameter Name="continue" Value="{{continue}}" RecordedValue="%2Foauth%2Fgrantscope%3Fauth_id%3D471216747082803944" CorrelationBinding="{{QueryStringParam5.continue}}" UrlEncode="False" UseToGroupResults="False" />
+            <QueryStringParameter Name="origin" Value="oauth-frontend" RecordedValue="oauth-frontend" CorrelationBinding="{{QueryStringParam6.origin}}" UrlEncode="False" UseToGroupResults="False" />
           </QueryStringParameters>
           <FormPostHttpBody>
-            <FormPostParameter Name="continue" Value="{{continue}}" RecordedValue="" />
-            <FormPostParameter Name="userId" Value="{{DataSource12.DAS_QA_LOADTEST_TEST_DATA_FILE_012#csv.GATEWAY_USERID}}" RecordedValue="" />
-            <FormPostParameter Name="password" Value="{{DataSource12.DAS_QA_LOADTEST_TEST_DATA_FILE_012#csv.GATEWAY_PASSWORD}}" RecordedValue="" />
+            <FormPostParameter Name="continue" Value="{{continue}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="userId" Value="{{DataSource12.DAS_QA_LOADTEST_TEST_DATA_FILE_012#csv.GATEWAY_USERID}}" RecordedValue="GDSUser60500" CorrelationBinding="" UrlEncode="True" />
+            <FormPostParameter Name="password" Value="{{DataSource12.DAS_QA_LOADTEST_TEST_DATA_FILE_012#csv.GATEWAY_PASSWORD}}" RecordedValue="password" CorrelationBinding="{{FormPostParam13.password}}" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -440,7 +440,7 @@
             </ExtractionRule>
           </ExtractionRules>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="07l3CHQUfuz0-t7C4SBNgmdHHwTubzJC6v1ScBc0fFa9aFxwCtyslR61zs5cjxjyP09gE_yb0ZdqTJG9uJQ0arDxx1CmtAUO2lKVx7Jp7qp5PSCq3SSORvAKtCJ5CILCtWhG1wFgvs-6QkBz2p-OnQ2" CorrelationBinding="" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -493,7 +493,7 @@
             </ExtractionRule>
           </CorrelationExtractionRules>
           <QueryStringParameters>
-            <QueryStringParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="" />
+            <QueryStringParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="N8Bm4OVbskZfTE1CqgCZ7qfD_PO3X7P0snmiuls8dJMeCuUCCSSaOijloK7EnhlY116cQMrYHsd9aj8-N9qcFy6HoFA9DVgGxxlYv-yrq3ikTs7aukr4ktlepKBX4Z4LFTfBvT3CSbZwPfe6i5jwNg2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
           </QueryStringParameters>
         </Request>
       </Items>
@@ -506,8 +506,8 @@
             <Header Name="Referer" Value="https://accounts.pp-eas.apprenticeships.education.gov.uk/accounts/{{AccountID}}/agreements/{{AgreementID}}/sign-your-agreement?__RequestVerificationToken={{RequestVerificationToken1}}" />
           </Headers>
           <FormPostHttpBody>
-            <FormPostParameter Name="__RequestVerificationToken" Value="{{RequestVerificationToken1}}" RecordedValue="" />
-            <FormPostParameter Name="choice" Value="2" RecordedValue="" />
+            <FormPostParameter Name="__RequestVerificationToken" Value="{{RequestVerificationToken1}}" RecordedValue="f2fUKVIN2j4nfNE4BS7HjnJGYw3wi_E0ZRojyTzFYxef4FrI3wLGy3kImDHKVOVuKPSSQcRr3OCB7lF1OiGgSHjHbJgQxPdJVy0ZWaWCNKLbT_KttQGmY3ULWIMZ5Dvu2BYrj5g_dRqcWJYsEU3FfQ2" CorrelationBinding="{{FormPostParam19.__RequestVerificationToken}}" UrlEncode="True" />
+            <FormPostParameter Name="choice" Value="2" RecordedValue="2" CorrelationBinding="{{FormPostParam20.choice}}" UrlEncode="True" />
           </FormPostHttpBody>
         </Request>
       </Items>
@@ -597,7 +597,7 @@
         <Header Name="Referer" Value="https://accounts.pp-eas.apprenticeships.education.gov.uk/accounts/9GG4GN/teams" />
       </Headers>
       <QueryStringParameters>
-        <QueryStringParameter Name="id" Value="cd2c8988f295abfccf4a263392fcd865" RecordedValue="" />
+        <QueryStringParameter Name="id" Value="cd2c8988f295abfccf4a263392fcd865" RecordedValue="cd2c8988f295abfccf4a263392fcd865" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
       </QueryStringParameters>
     </Request>
     <Request Method="GET" Guid="49a76bfe-9d2a-447b-ba95-4f60c4a0d157" Version="1.1" Url="https://forecasting.pp-eas.apprenticeships.education.gov.uk/" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
